@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    color: white;
+    font-family: "Coiny", system-ui;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timer {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.current {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Indie Flower", cursive;
+}
+
+#currentTime {
+    font-family: "Coiny", system-ui;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#start {
+    width: 150px;
+    height: 40px;
+    border-radius: 18px;
+    background: #fff;
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#lap {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    font-size: 22px;
+}
+
+#reset{
+    width:40px;
+    height:40px;
+    background:transparent;
+    color:#fff;
+    font-size:30px;
+}
+
+#reset i{ transition: transform 0.5s ease; }
+#reset i.rotate{ transform: rotate(360deg); } 
